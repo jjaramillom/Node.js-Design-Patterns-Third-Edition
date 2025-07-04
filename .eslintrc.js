@@ -4,9 +4,7 @@ module.exports = {
     es6: true,
     node: true
   },
-  extends: [
-    'standard'
-  ],
+  extends: ['standard'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly'
@@ -17,6 +15,8 @@ module.exports = {
   },
   parser: 'babel-eslint',
   rules: {
-    strict: 1
+    strict: 1,
+    'space-before-function-paren': 'off',
+    'no-trailing-spaces': 'off'
   }
 }
